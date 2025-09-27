@@ -1,9 +1,12 @@
-import { Button } from "@/components/ui/button"
+import { Button, Button2 } from "@/components/ui/button"
 import PulsingBorderShader from "./components/pulsing-border-shader"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ArrowRight, Phone, ShoppingCart, Headphones, Zap, Shield, Check, Star } from "lucide-react"
 
 export default function Component() {
+
+
+
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white overflow-hidden transition-colors">
       {/* Background gradient */}
@@ -48,14 +51,15 @@ export default function Component() {
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
 
-              <Button
+              <Button2
+                openUrl="https://f108ew-4y.myshopify.com"
                 variant="outline"
                 size="lg"
                 className="border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-8 py-6 text-lg rounded-full bg-transparent"
               >
-                <Headphones className="mr-2 w-5 h-5" />
-                Talk to agent for demo
-              </Button>
+              <Headphones className="mr-2 w-5 h-5" />
+                Demo Shopify store
+              </Button2>
             </div>
 
             <div className="flex items-center gap-8 pt-8 text-sm text-gray-500 dark:text-gray-400">
