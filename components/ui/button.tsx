@@ -41,10 +41,6 @@ export interface ButtonProps
   openUrl?: string;
 }
 
-const openInNewTab = () => {
-  window.open("https://f108ew-4y.myshopify.com", "_blank", "noreferrer");
-};
-
 
 const Button2 = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, openUrl, onClick, ...props }, ref) => {

@@ -1,7 +1,10 @@
 import { Button, Button2 } from "@/components/ui/button"
 import PulsingBorderShader from "./components/pulsing-border-shader"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { ArrowRight, Phone, ShoppingCart, Headphones, Zap, Shield, Check, Star } from "lucide-react"
+import { ArrowRight, Phone, ShoppingCart, Headphones, Zap, Shield, Check, Star, Headset } from "lucide-react"
+
+import Image from 'next/image';
+import logo from '@/app/assets/waveify_logo.png';
 
 export default function Component() {
 
@@ -96,6 +99,31 @@ export default function Component() {
           {/* Right side - Animation */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
+
+
+
+              <div
+                  className="absolute top-1 -left-6 w-8 h-8  rounded-full flex items-center justify-center animate-bounce"
+                  style={{ animationDelay: "2s", animationDuration: "2s" }}
+                >
+                  {/* <ShoppingCart className="w-4 h-4 text-purple-600 dark:text-purple-400" /> */}
+
+
+                  <div className='relative z-20 flex items-center text-lg font-medium'>
+                  <Image
+                    src={logo}
+                    width={65}
+                    height={65}
+                    alt="Waveify"
+                  />
+                  <h3 className="text-3xl ml-2 tracking-tight leading-tight">Waveify</h3>
+                </div>
+              </div>
+
+
+
+
+
               {/* Glow effect behind the shader */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-200/20 to-purple-200/20 dark:from-blue-500/20 dark:to-purple-500/20 blur-3xl scale-110" />
 
@@ -104,14 +132,18 @@ export default function Component() {
                 <PulsingBorderShader />
               </div>
 
+
+
+
+
               <div
                 className="absolute -top-4 -right-4 w-8 h-8 bg-blue-100 dark:bg-blue-500/20 rounded-full flex items-center justify-center animate-bounce border border-blue-300 dark:border-blue-400/30"
                 style={{ animationDelay: "0s" }}
               >
-                <Phone className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                <Headset className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               </div>
               <div
-                className="absolute top-1/3 -left-6 w-8 h-8 bg-purple-100 dark:bg-purple-500/20 rounded-full flex items-center justify-center animate-bounce border border-purple-300 dark:border-purple-400/30"
+                className="absolute bottom-1/2 -left-6 w-8 h-8 bg-purple-100 dark:bg-purple-500/20 rounded-full flex items-center justify-center animate-bounce border border-purple-300 dark:border-purple-400/30"
                 style={{ animationDelay: "1s" }}
               >
                 <ShoppingCart className="w-4 h-4 text-purple-600 dark:text-purple-400" />

@@ -1,6 +1,11 @@
 import { PulsingBorder } from "@paper-design/shaders-react"
 
-export default function PulsingBorderShader(props) {
+import Image from 'next/image';
+import logo from '@/app/assets/waveify_logo.png';
+
+
+
+export default function PulsingBorderShader(props: any) {
   return (
     <PulsingBorder
       colors={["#5800FF", "#BEECFF", "#E77EDC", "#FF4C3E"]}
@@ -27,5 +32,6 @@ export default function PulsingBorderShader(props) {
           "radial-gradient(circle in oklab, oklab(0% 0 -.0001 / 0%) 25.22%, oklab(30.5% 0.029 -0.184) 43.89%, oklab(0% 0 -.0001 / 0%) 60.04%)",
       }}
     />
+
   )
 }
