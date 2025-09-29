@@ -46,13 +46,14 @@ export default function Component() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button
+              <Button2
+                openUrl="https://console.waveify.ai"
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-6 text-lg rounded-full group"
               >
-                Get Started Free
+                Login to console
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </Button2>
 
               <Button2
                 openUrl="https://f108ew-4y.myshopify.com"
@@ -202,9 +203,11 @@ export default function Component() {
                 <span className="text-sm">Shopify integration</span>
               </li>
             </ul>
-            <Button className="w-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white">
+            <Button2 className="w-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white"
+            
+            openUrl="https://console.waveify.ai">
               Get Started Free
-            </Button>
+            </Button2>
           </div>
 
           {/* Premium Plan */}
@@ -242,9 +245,10 @@ export default function Component() {
                 <span className="text-sm">Priority support</span>
               </li>
             </ul>
-            <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+            <Button2 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
+            openUrl="https://console.waveify.ai">
               Start Premium
-            </Button>
+            </Button2>
           </div>
 
           {/* Enterprise Plan */}
@@ -276,7 +280,10 @@ export default function Component() {
                 <span className="text-sm">24/7 phone support</span>
               </li>
             </ul>
-            <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white">Contact Sales</Button>
+            <Button2 className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+              openUrl="https://console.waveify.ai">
+              Contact Sales
+            </Button2>
           </div>
         </div>
       </div>
