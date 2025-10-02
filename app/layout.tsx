@@ -14,6 +14,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Waveify - AI Voice Agent",
   description: "Created by Amarjith Sudhakar K",
+  icons: {
+    icon: "@/app/assets/favicon.ico",
+    shortcut: "@/app/assets/favicon-16x16.png",
+    apple: "@/app/assets/apple-touch-icon.png",
+  },
 }
 
 export default function RootLayout({
@@ -27,7 +32,7 @@ export default function RootLayout({
         <Suspense fallback={<div>Loading...</div>}>
           <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="root"
             enableSystem={false}
             storageKey="theme"
             disableTransitionOnChange={false}

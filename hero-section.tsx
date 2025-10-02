@@ -1,7 +1,7 @@
 import { Button, Button2 } from "@/components/ui/button"
 import PulsingBorderShader from "./components/pulsing-border-shader"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { ArrowRight, Phone, ShoppingCart, Headphones, Zap, Shield, Check, Star, Headset } from "lucide-react"
+import { ArrowRight, Phone, ShoppingCart, Headphones, Zap, Shield, Check, Star, Headset, MailCheck, MailOpen, Send } from "lucide-react"
 
 import Image from 'next/image';
 import logo from '@/app/assets/waveify_logo.png';
@@ -65,7 +65,20 @@ export default function Component() {
                 Demo Shopify store
               </Button2>
             </div>
+              <div className="flex items-center gap-2">
 
+              <div className="flex items-center gap-2">
+                
+               <MailOpen className="w-4 h-4" />
+              <h2 className="text-xl lg:text-xl text-gray-600 font-bold dark:text-gray-300 leading-relaxed max-w-2xl">Enquire:</h2>
+              <h2 className="text-xl lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">amar@waveify.ai</h2>
+
+                
+              </div>
+              <div className="w-2 h-2 bg-violet-500 rounded-full animate-pulse" />
+                
+              </div>
+              <div className="flex items-center gap-2"></div>
             <div className="flex items-center gap-8 pt-8 text-sm text-gray-500 dark:text-gray-400">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
