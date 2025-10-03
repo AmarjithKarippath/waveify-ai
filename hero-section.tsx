@@ -6,6 +6,8 @@ import { ArrowRight, Phone, ShoppingCart, Headphones, Zap, Shield, Check, Star, 
 import Image from 'next/image';
 import logo from '@/app/assets/waveify_logo.png';
 
+import BillingPage from "@/app/billing/billing";
+ 
 export default function Component() {
 
 
@@ -68,12 +70,9 @@ export default function Component() {
               <div className="flex items-center gap-2">
 
               <div className="flex items-center gap-2">
-                
-               <MailOpen className="w-4 h-4" />
-              <h2 className="text-xl lg:text-xl text-gray-600 font-bold dark:text-gray-300 leading-relaxed max-w-2xl">Enquire:</h2>
-              <h2 className="text-xl lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">amar@waveify.ai</h2>
-
-                
+                <MailOpen className="w-4 h-4" />
+                  <h2 className="text-xl lg:text-xl text-gray-600 font-bold dark:text-gray-300 leading-relaxed max-w-2xl">Enquire:</h2>
+                  <h2 className="text-xl lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">amar@waveify.ai</h2>
               </div>
               <div className="w-2 h-2 bg-violet-500 rounded-full animate-pulse" />
                 
@@ -173,6 +172,8 @@ export default function Component() {
         </div>
       </div>
 
+
+
             {/* Pricing section at the top */}
       <div className="relative z-10 container mx-auto px-4 py-12">
         <div className="text-center mb-12">
@@ -184,121 +185,10 @@ export default function Component() {
             Plan
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg">Scale your ecommerce customer support with AI</p>
+          <p className="text-gray-600 dark:text-gray-400 text-lg">All plans include PCI compliance, bank-level encryption, and seamless integration with your existing systems.</p>
+        
         </div>
-
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
-          {/* Free Plan */}
-          <div className="bg-gray-50/50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 backdrop-blur-sm">
-            <div className="text-center mb-6">
-              <h3 className="text-xl font-semibold mb-2">Free</h3>
-              <div className="text-3xl font-bold mb-1">$0</div>
-              <div className="text-gray-500 dark:text-gray-400 text-sm">per month</div>
-            </div>
-            <ul className="space-y-3 mb-6">
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-green-500" />
-                <span className="text-sm">10 voice interactions/month</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-green-500" />
-                <span className="text-sm">Basic order tracking</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-green-500" />
-                <span className="text-sm">Product informations</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-green-500" />
-                <span className="text-sm">Email support</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-green-500" />
-                <span className="text-sm">Shopify integration</span>
-              </li>
-            </ul>
-            <Button2 className="w-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white"
-            
-            openUrl="https://console.waveify.ai">
-              Get Started Free
-            </Button2>
-          </div>
-
-          {/* Premium Plan */}
-          <div className="bg-gradient-to-b from-blue-50/30 to-purple-50/30 dark:from-blue-900/30 dark:to-purple-900/30 border border-blue-200 dark:border-blue-500/50 rounded-2xl p-6 backdrop-blur-sm relative">
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-1 rounded-full text-xs font-medium flex items-center gap-1">
-                <Star className="w-3 h-3" />
-                Most Popular
-              </div>
-            </div>
-            <div className="text-center mb-6">
-              <h3 className="text-xl font-semibold mb-2">Premium</h3>
-              <div className="text-3xl font-bold mb-1">$49</div>
-              <div className="text-gray-500 dark:text-gray-400 text-sm">per month</div>
-            </div>
-            <ul className="space-y-3 mb-6">
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-blue-500" />
-                <span className="text-sm">5,000 voice interactions/month</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-blue-500" />
-                <span className="text-sm">Advanced order processing</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-blue-500" />
-                <span className="text-sm">Cart recovery automation</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-blue-500" />
-                <span className="text-sm">Product recommendations</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-blue-500" />
-                <span className="text-sm">Priority support</span>
-              </li>
-            </ul>
-            <Button2 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
-            openUrl="https://console.waveify.ai">
-              Start Premium
-            </Button2>
-          </div>
-
-          {/* Enterprise Plan */}
-          <div className="bg-gray-50/50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 backdrop-blur-sm">
-            <div className="text-center mb-6">
-              <h3 className="text-xl font-semibold mb-2">Enterprise</h3>
-              <div className="text-3xl font-bold mb-1">Custom</div>
-              <div className="text-gray-500 dark:text-gray-400 text-sm">pricing</div>
-            </div>
-            <ul className="space-y-3 mb-6">
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-purple-500" />
-                <span className="text-sm">Unlimited interactions</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-purple-500" />
-                <span className="text-sm">Custom integrations</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-purple-500" />
-                <span className="text-sm">White-label solution</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-purple-500" />
-                <span className="text-sm">Dedicated account manager</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-purple-500" />
-                <span className="text-sm">24/7 phone support</span>
-              </li>
-            </ul>
-            <Button2 className="w-full bg-purple-600 hover:bg-purple-700 text-white"
-              openUrl="https://console.waveify.ai">
-              Contact Sales
-            </Button2>
-          </div>
-        </div>
+          < BillingPage/>
       </div>
 
       {/* Bottom gradient fade */}
